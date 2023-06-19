@@ -1,0 +1,1 @@
+CREATE DATABASE `quiniela_app` SET DEFAULT CHARACTER SET `utf8`;
