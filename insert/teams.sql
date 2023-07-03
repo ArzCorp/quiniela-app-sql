@@ -1,0 +1,20 @@
+INSERT INTO `teams` (`name`, `logo_image`)
+VALUES
+('América', 'https://i.ibb.co/Xy4nrN1/club-amrica.webp'),
+('Atlas', 'https://i.ibb.co/W50SkfZ/club-atlas.webp'),
+('Tijuana', 'https://i.ibb.co/tpjpZqk/club-tijuana.webp'),
+('León', 'https://i.ibb.co/sJ6pzQK/club-leon.webp'),
+('Cruz Azul', 'https://i.ibb.co/wNL1b3s/cruz-azul.webp'),
+('Juárez', 'https://i.ibb.co/cCBsG0N/fc-juarez.webp'),
+('Necaxa', 'https://i.ibb.co/HBP6CGJ/club-necaxa.webp'),
+('Pachuca', 'https://i.ibb.co/r52BnTS/club-pachuca.webp'),
+('Puebla', 'https://i.ibb.co/f1JB0s6/club-puebla.webp'),
+('Querétaro', 'https://i.ibb.co/ysx4yqr/queretaro-fc-logo.webp'),
+('Santos Laguna', 'https://i.ibb.co/68tddNm/santos-laguna.webp'),
+('Tigres', 'https://i.ibb.co/pyTMVcJ/club-tigres.webp'),
+('Toluca', 'https://i.ibb.co/cJZJZh7/club-toluca.webp'),
+('Pumas', 'https://i.ibb.co/M2WSVmg/pumas-unam.webp'),
+('Mazatlán', 'https://i.ibb.co/vv1BZrm/Mazatl-n-F-C.webp'),
+('San Luis', 'https://i.ibb.co/D74HCbK/atl-tico-san-luis.webp'),
+('Guadalajara', 'https://i.ibb.co/KhyrFpG/chivas-guadalajara.webp'),
+('Monterrey', 'https://i.ibb.co/jyHV3dZ/monterrey.webp');
