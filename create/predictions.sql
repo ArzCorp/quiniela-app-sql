@@ -6,6 +6,9 @@ CREATE TABLE `predictions` (
   `prediction_type_id` INT UNSIGNED NOT NULL,
   `game_id` INT UNSIGNED NOT NULL,
   `user_id` INT UNSIGNED NOT NULL,
+  `is_active` INT NOT NULL DEFAULT 1,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   PRIMARY KEY (`prediction_id`),
   CONSTRAINT `point_type_id_on_point_types`
   FOREIGN KEY (`point_type_id`) REFERENCES `point_types`(`point_type_id`),
