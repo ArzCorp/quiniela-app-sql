@@ -1,13 +1,14 @@
-CREATE TABLE `games_x_quinielas` (
-  `games_quinielas_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CREATE TABLE `quinielas_x_users` (
+  `quinielas_x_users` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `quiniela_id` INT UNSIGNED NOT NULL,
-  `game_id` INT UNSIGNED NOT NULL,
+  `user_id` INT UNSIGNED NOT NULL,
+  `current_total_points` INT UNSIGNED NOT NULL,
   `is_active` INT NOT NULL DEFAULT 1,
   `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
-  PRIMARY KEY (`games_quinielas_id`),
-  CONSTRAINT `quiniela_id_on_quinielas`
+  PRIMARY KEY (`quinielas_x_users`),
+  CONSTRAINT `fk_quinielas_id_on_quienielas`
   FOREIGN KEY (`quiniela_id`) REFERENCES `quinielas`(`quiniela_id`),
-  CONSTRAINT `g_X_q_game_id_on_games`
-  FOREIGN KEY (`game_id`) REFERENCES `games`(`game_id`)
+  CONSTRAINT `fk_user_id_on_users`
+  FOREIGN KEY (`user_id`) REFERENCES `users`(`user_id`)
 );
